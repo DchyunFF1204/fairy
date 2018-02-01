@@ -4,7 +4,11 @@ import com.alibaba.fastjson.JSONObject;
 
 import java.util.Comparator;
 import java.util.Objects;
-
+/**
+ * @Package name : com.dy.fairy
+ * @Description : java7 中Objects工具类
+ * @Date : 2018/2/1
+ */
 public class TestObjects {
 
     public static void main(String[] args) {

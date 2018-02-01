@@ -1,6 +1,7 @@
 package com.dy.fairy;
 
 import java.util.Optional;
+import java.util.function.Supplier;
 
 /**
  * @Package name : com.dy.fairy
@@ -27,6 +28,7 @@ public class TestOptional {
         System.out.println(o.orElseGet(()->"default val"));
 
         System.out.println(test_optional.filter(a->a.length()>10).orElse("optional is null"));
+
 
     }
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fairy.iml" filepath="$PROJECT_DIR$/.idea/modules/fairy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fairy_main.iml" filepath="$PROJECT_DIR$/.idea/modules/fairy_main.iml" group="fairy" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fairy_test.iml" filepath="$PROJECT_DIR$/.idea/modules/fairy_test.iml" group="fairy" />
+    </modules>
+  </component>
+</project>

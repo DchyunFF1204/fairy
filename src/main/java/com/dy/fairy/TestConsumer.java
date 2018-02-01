@@ -25,7 +25,7 @@ public class TestConsumer {
             o1.put("consumer3", "test consume3");
         };
 
-        // consumer 组装
+        // consumer 组装 jsonObjectConsumer1 is before jsonObjectConsumer is after
         Consumer<JSONObject> jsonObjectConsumer2 = jsonObjectConsumer.andThen(jsonObjectConsumer1);
         JSONObject jsonObject3 = new JSONObject();
         jsonObjectConsumer2.accept(jsonObject3);

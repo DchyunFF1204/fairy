@@ -43,6 +43,10 @@ public class TestStream {
         System.out.println("list转map=="+map);
 
 
+        List<JSONObject> collect = objects.stream().collect(Collectors.collectingAndThen(
+                Collectors.toCollection(() -> new TreeSet<>((o1, o2) -> o1.getInteger("id").compareTo(o2.getInteger("id")))), ArrayList::new));
+        System.out.println("list去重id="+collect);
+
         List<JSONObject> sex = objects.stream().map(a -> {
             a.put("sex", 1);
             return a;

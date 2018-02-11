@@ -31,6 +31,8 @@ public class TestStream {
         jsonObject2.put("name","xiaozhang");
         objects.add(jsonObject2);
 
+        List<Integer> ids = objects.stream().map(a -> a.getInteger("id")).distinct().collect(Collectors.toList());
+        System.out.println("获取list中的某个字段并去重="+ids);
 
         List<JSONObject> listine = objects.stream().filter(a -> a.getInteger("id") > 1).collect(Collectors.toList());
         System.out.println("过滤list集合中id>1的集合=="+listine);
